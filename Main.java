@@ -10,6 +10,8 @@ class Solution {
                     String tmp = a.substring(k, k +1);
                     if (b.contains(tmp)) {
                         isSimple = false;
+                        b = "";
+                        break;
                     } else {
                         b += tmp;
                     }
